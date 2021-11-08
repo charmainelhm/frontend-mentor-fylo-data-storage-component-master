@@ -1,0 +1,36 @@
+:root {
+  --color-primary-text: #dddbff;
+  --color-secondary-text: #848794;
+  --color-background: #1d2c67;
+  --color-accent: #0c122c;
+  --color-start-gradient: #ffa399;
+  --color-end-gradient: #ff4d97;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Typography */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  color: var(--color-primary-text);
+}
+
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
