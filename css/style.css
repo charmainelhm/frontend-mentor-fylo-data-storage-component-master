@@ -5,7 +5,7 @@
   --color-accent: #0c122c;
   --color-start-gradient: #ffa399;
   --color-end-gradient: #ff4d97;
-  --border-radius: 8px;
+  --border-radius: 12px;
 }
 
 *,
@@ -13,6 +13,11 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
 }
 
 /* Typography */
@@ -27,14 +32,28 @@ body {
 }
 
 /* Action Panel */
+.panel-action {
+  background-color: var(--color-background);
+  border-radius: 12px 100px 12px 12px;
+  padding: 40px 80px 40px 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.action__header {
+  flex-basis: 100%;
+  margin-bottom: 30px;
+}
+
 .icon-container {
   width: 48px;
   height: 48px;
   background-color: var(--color-accent);
-  border-radius: var(--border-radius);
+  border-radius: 8px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  margin-right: 16px;
 }
 
 /* Attribution */
