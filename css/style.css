@@ -112,6 +112,23 @@ body {
   margin: 0 auto;
 }
 
+.information__popup {
+  display: inline-block;
+  background: white;
+  padding: 2rem 2.5rem;
+  border-radius: var(--border-radius);
+  color: var(--color-secondary-text);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.number {
+  font-size: 4rem;
+  color: var(--color-accent);
+  vertical-align: -15%;
+  margin-right: 0.5rem;
+}
+
 /* Attribution */
 .attribution {
   font-size: 11px;
