@@ -56,6 +56,37 @@ body {
   margin-right: 16px;
 }
 
+/* Meter */
+.meter {
+  background: var(--color-accent);
+  width: auto;
+  height: 20px;
+  border-radius: 30px;
+  padding: 3px;
+}
+
+.meter--current {
+  width: 80%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    var(--color-start-gradient),
+    var(--color-end-gradient)
+  );
+  border-radius: 30px;
+  padding: 2px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dot {
+  display: inline-block;
+  background: white;
+  border-radius: 50%;
+  height: 100%;
+  width: 5.5%;
+}
+
 /* Attribution */
 .attribution {
   font-size: 11px;
