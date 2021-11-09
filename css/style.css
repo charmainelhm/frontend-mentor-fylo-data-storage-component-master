@@ -15,6 +15,12 @@
   margin: 0;
 }
 
+.grid {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-55%);
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
@@ -29,6 +35,8 @@ body {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
   font-size: 1.4rem;
   color: var(--color-primary-text);
+  background-image: url(../images/bg-mobile.png);
+  background-color: var(--color-accent);
 }
 
 /* Action Panel */
@@ -38,11 +46,16 @@ body {
   padding: 40px 80px 40px 40px;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 1.8rem;
 }
 
 .action__header {
   flex-basis: 100%;
   margin-bottom: 30px;
+}
+
+.action__content {
+  display: flex;
 }
 
 .icon-container {
@@ -53,7 +66,7 @@ body {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin-right: 16px;
+  margin-right: 3vw;
 }
 
 /* Meter */
@@ -100,6 +113,7 @@ body {
   background: var(--color-background);
   border-radius: var(--border-radius);
   padding: 3rem 3rem 5rem;
+  position: relative;
 }
 
 .information__header {
@@ -115,15 +129,19 @@ body {
 .information__popup {
   display: inline-block;
   background: white;
-  padding: 2rem 2.5rem;
+  padding: 1.5rem 2rem;
   border-radius: var(--border-radius);
   color: var(--color-secondary-text);
   font-weight: 700;
   text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 75%;
 }
 
 .number {
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: var(--color-accent);
   vertical-align: -15%;
   margin-right: 0.5rem;
@@ -133,6 +151,9 @@ body {
 .attribution {
   font-size: 11px;
   text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 1%;
 }
 
 .attribution a {
