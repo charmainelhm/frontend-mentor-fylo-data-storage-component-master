@@ -15,15 +15,25 @@
   margin: 0;
 }
 
-.grid {
-  position: fixed;
-  top: 50%;
-  transform: translateY(-55%);
-}
-
 .container {
   width: 90%;
-  margin: 0 auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 920px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    column-gap: 2rem;
+    align-items: end;
+  }
 }
 
 /* Typography */
@@ -37,7 +47,25 @@ body {
   color: var(--color-primary-text);
   background-image: url(../images/bg-mobile.png);
   background-color: var(--color-accent);
+  background-size: 100% 100vh;
+  background-repeat: no-repeat;
+  /* background-position: center bottom; */
 }
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url(../images/bg-desktop.png);
+    background-size: 100% 100vh;
+    background-position: 0 50vh;
+    height: 100%;
+  }
+}
+/* 
+@media screen and (min-width: 1440px) {
+  body {
+    background-size: cover;
+  }
+} */
 
 /* Action Panel */
 .panel-action {
@@ -67,6 +95,16 @@ body {
   justify-content: center;
   align-items: center;
   margin-right: 3vw;
+}
+
+@media screen and (min-width: 768px) {
+  .panel-action {
+    margin-bottom: 0;
+  }
+
+  .icon-container {
+    margin-right: 1.5rem;
+  }
 }
 
 /* Meter */
@@ -141,10 +179,44 @@ body {
 }
 
 .number {
-  font-size: 3.5rem;
+  font-size: 9vmin;
   color: var(--color-accent);
   vertical-align: -15%;
   margin-right: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .information__header {
+    text-align: start;
+  }
+  .panel-information {
+    padding: 3rem;
+  }
+
+  .information__popup {
+    width: 30%;
+    left: 60%;
+    top: -30%;
+    font-size: 1.2rem;
+    transform: none;
+  }
+
+  .information__popup::after {
+    display: block;
+    position: absolute;
+    right: 0;
+    content: " ";
+    border-left: transparent solid 15px;
+    border-right: white solid 15px;
+    border-top: white solid 16px;
+    border-bottom: transparent solid 16px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .number {
+    font-size: 3.5rem;
+  }
 }
 
 /* Attribution */
