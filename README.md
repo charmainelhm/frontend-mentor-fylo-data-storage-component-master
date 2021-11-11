@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution of the challenge](https://www.frontendmentor.io/solutions/responsive-storage-component-css-grid-and-flexbox-zRE9cNDfW)
 - Live Site URL: [Live site of the challenge](https://nostalgic-einstein-1ebf17.netlify.app/)
 
 ## My process
